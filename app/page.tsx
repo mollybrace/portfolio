@@ -4,16 +4,24 @@ import Hero from "./components/Hero";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import { TechSkills } from "./components/TechSkills";
+import About from "./components/About";
+import SmallNav from "./components/SmallNav";
+import NavbarAI from "./components/NavbarAI";
 
 export default function Home() {
   return (
-    <div>
+    <div className="w-screen h-screenn overflow-hidden">
       <Nav />
       <Hero />
       <Intro />
       <Projects />
+      <TechSkills />
+      <Experience />
+      <About />
       <Contact />
-      
+
     </div>
   )
 }

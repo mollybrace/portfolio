@@ -1,33 +1,67 @@
-import Image from 'next/image'
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
+import SmallNav from './SmallNav'
 
 const Nav = () => {
-  return (
-        <div className=' flex justify-between'>
-            <div className=''>
-                <div className='border'>Logo</div>
-            </div>
+    const [isClicked, setIsClicked] = useState(false)
 
-            <div className='flex justify-around md:hidden'>
-                <p>Projects</p>
-                <p>Skills</p>
-                <p>Experience</p>
-                <p>Contact</p>
+    const toggleNavbar = () :void => {
+        setIsClicked(!isClicked)
+      }
+    
+  return (
+        <div className='fixed w-full flex bg-white bg-opacity-90 justify-between  h-[90px] top-0 '>
+            <div className='border'>
+                <div className='border w-[50px]'>Logo</div>
             </div>
+            
+
+            {/* <div className='flex justify-start basis-2/3 border w-full text-3xl text-gray-500 h-[100px]'>
+                <ul className=' flex w-full space-x-10 justify-center items-center text-center'>
+                    <li className='hover:underline p-4'>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li className='hover:underline p-4'>
+                        <a href='#skills'>Skills</a>
+                    </li>
+                    <li className='hover:underline p-4'>
+                        <a href='#experience'>Experience</a>
+                    </li>
+                    <li className='hover:underline p-4'>
+                        <a href='#about'>About</a>
+                    </li>
+                    <li className='hover:underline p-4'>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div> */}
  
-            <div className='flex justify-end space-x-4 border '>
+            <div className='flex border '>
                 <div className=''>
-                    <button className='text-5xl'>
+                    {/* <button className='text-5xl'>
                         🌒🌔
-                     </button>
+                     </button> */}
             
                 </div>
-                <div className='lg:hidden'>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
-                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                     </svg>
+                <div className='relative flex items-center'>
+                <div className='absolute top-0 right-0 z-50 w-[100px] justify-center flex h-full'>
+                    <button
+                        onClick={toggleNavbar}>
+                            {isClicked? (
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" className="bi bi-x-lg" viewBox="0 0 16 16">
+                                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                   </svg> 
+                            ) : (
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                </svg>
+                            )
+                            }
+                    </button>
+                </div>
                 </div>
             </div>
+            {isClicked && <SmallNav toggleNavbar={toggleNavbar}/>}
         </div>
   )
 }
