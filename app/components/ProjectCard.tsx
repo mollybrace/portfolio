@@ -1,6 +1,19 @@
 import Image from 'next/image'
 import React from 'react'
 
+interface Project {
+  title: string;
+  img: string;
+  info: string;
+  tools: string[];
+  repo: string;
+  site: string;
+}
+
+interface ProjectCardProps {
+  project: Project;
+}
+
 const ProjectCard = ({ project }) => {
 
     
