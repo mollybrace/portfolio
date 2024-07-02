@@ -2,9 +2,11 @@ import React from 'react'
 
 const Intro = () => {
   return (
-    <div className='flex flex-col items-start text-gray-400 text-balance text-2xl mx-14   w-full'>
+    <div className='flex justify-center'>
+
+    <div className='flex flex-col items-start text-gray-400 text-balance text-2xl pb-6   w-5/6'>
         <p className='py-2'>Hi, I'm Molly!</p>
-        <p className='py-2'>A Freelance Software Engineer</p>
+        <p className='py-2'>A Freelance Web Developer,</p>
         <p className='py-2 w-full text-wrap'>
             After travelling and working around the world for 6 years, I decided to explore the world of software engineering back in 2023! After compelting a rigorous bootcamp where I learned the fundamentals of front-end and back-end development. I now continue to sharpen my skills on personal and client projects.
         </p>
@@ -19,6 +21,7 @@ const Intro = () => {
         <p className='py-4'>Scroll down to find out more!</p>
         </div>
 
+    </div>
     </div>
   )
 }

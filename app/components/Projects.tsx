@@ -27,7 +27,7 @@ const Projects = () => {
         <div className='text-6xl font-extrabold pl-4'>
         Projects
         </div>
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col  items-center w-full'>
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project}/>
 

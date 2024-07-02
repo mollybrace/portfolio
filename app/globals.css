@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+}

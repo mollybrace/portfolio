@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
        
 
                 <div className='text-2xl p-4 w-full '>
-                     <p className='font-bold text-3xl pb-6'>{project.title}</p>
+                     <p className='font-bold text-4xl pb-6'>{project.title}</p>
                      <div className='flex justify-center'>
                      <Image
                      src={project.img}
@@ -18,12 +18,16 @@ const ProjectCard = ({ project }) => {
                      height={500} />
 
                      </div>
-                     <ul><li className='m-4 px-4'>{project.tools}</li></ul>
-                     <p>{project.info}</p>
+                     <p className='pt-4'>{project.info}</p>
+                     <ul><li className='m-4 px-4 text-gray-600 italic'>{project.tools}</li></ul>
+
+                     <div className='flex justify-around font-bold text-blue-950'>
                      <a href={project.repo} target="_blank" className='hover:underline'><p>Repo</p></a>
                      <a  href={project.site} target="_blank" className='hover:underline'>
                       <p>Live Site</p>
                      </a>   
+
+                     </div>
 
                  </div>
     

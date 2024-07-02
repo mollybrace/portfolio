@@ -106,7 +106,23 @@ const Timeline = () => {
     <div className="timeline-start mb-10 md:text-start">
       <time className="font-mono italic text-3xl ">2019</time>
       <div className="text-lg font-black">Working Holiday Visa- Australia</div>
-      <div></div>
+      <div>After completing university I moved to Australia where I undertook a number of hospitality roles as well as completing my 88 days of agricultural work.</div>
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div className="timeline-middle">
+     
+    </div>
+    <div className="timeline-start mb-10 md:text-start">
+      <time className="font-mono italic text-3xl ">2014-2018</time>
+      <div className="text-lg font-black">University of Brighton</div>
+      <div>Business Management with Economics</div>
+      <div>First class honours</div>
+      <div className="text-lg font-black">Brandnew IO</div>
+      <div>Head of Influencer management</div>
+      <div>As my placement year I moved to Berlin to work at a digital marketing start up company. After starting as an intern, after 6 months I was promoted to head of my department and continued to work remotely for the company throughout my final year of university.</div>
     </div>
     <hr />
   </li>
