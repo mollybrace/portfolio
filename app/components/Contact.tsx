@@ -18,7 +18,7 @@ const Contact = () => {
         </div>
         <div className='fex justify-center text-center pt-6 pb-4'>
         <div className='text-gray-400 italic font-bold'>
-          Designed and coded by Molly Brace with NextJS and Tailwind
+          Designed and coded by Molly Brace with NextJS and Tailwind and hosted on Vercel.
         </div>
 
         </div>
