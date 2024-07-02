@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import SmallNav from './SmallNav'
+import Image from 'next/image'
 
 const Nav = () => {
     const [isClicked, setIsClicked] = useState(false)
@@ -11,8 +12,15 @@ const Nav = () => {
     
   return (
         <div className='fixed w-full flex bg-white bg-opacity-90 justify-between  h-[90px] top-0 '>
-            <div className='border'>
-                <div className='border w-[50px]'>Logo</div>
+            <div className=''>
+                <div className=' w-[100px] rounded-lg'>
+                    <Image 
+                    src="/logo.png"
+                    alt="logo"
+                    height={200}
+                    width={150}
+                    className='rounded-xl m-2'/>
+                    </div>
             </div>
             
 

@@ -7,8 +7,7 @@ import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import { TechSkills } from "./components/TechSkills";
 import About from "./components/About";
-import SmallNav from "./components/SmallNav";
-import NavbarAI from "./components/NavbarAI";
+
 
 export default function Home() {
   return (

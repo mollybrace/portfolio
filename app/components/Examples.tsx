@@ -2,10 +2,7 @@ import React from 'react'
 
 const Examples = () => {
 
-  const projects = [
-    {title: "Mocean Therapy", tools: ["React", "Tailwind", "Next.js", "Javascript", "Vercel"], info: "A responsive website", repo: "", site: ""}
-    {title: "Jenn Evolve", tools: ["React", "Tailwind", "Next.js", "Javascript", "Vercel"], info: "A responsive website", repo: "", site: ""}
-  ]
+ 
   return (
     <div>
         <h2>{projects.title}</h2>
