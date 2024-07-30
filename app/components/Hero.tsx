@@ -24,7 +24,7 @@ const Hero = () => {
     w-full mx-20 my-24 rounded-3xl p-1' >
       <div className='bg-white p-16 h-full rounded-3xl '>
         <div className='rounded-3xl h-full w-full flex justify-center align-middle items-center text-center flex-col'>
-            <div className='p-2 text-[150px]  text-transparent	bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text'>Molly Brace</div>
+            <div className='p-2 text-9xl text-transparent	bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text'>Molly Brace</div>
             <div className='text-5xl bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent pt-3'>
             <span ref={el} />
             </div>

@@ -11,7 +11,7 @@ const Nav = () => {
       }
     
   return (
-        <div className='fixed w-full flex bg-white bg-opacity-90 justify-between  h-[90px] top-0 '>
+        <div className='fixed w-full flex bg-white bg-opacity-90 justify-between  h-[90px] top-0 z-40'>
             <div className=''>
                 <div className=' w-[100px] rounded-lg'>
                     <Image 

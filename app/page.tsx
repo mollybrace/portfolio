@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import { TechSkills } from "./components/TechSkills";
 import About from "./components/About";
+import SmallTimeline from "./components/SmallTimeline";
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <Experience />
       <About />
       <Contact />
+
 
     </div>
   )
