@@ -29,9 +29,9 @@ const About = () => {
         {locations.map((location, index) => (
           <div key={index} className='flex flex-row align-middle'>
           <div className='flex flex-col w-[150px] text-center items-center rounded-xl justify-center basis-1 p-2'>
-            <p className='pr-4 text-5xl'>{location.flag}</p>
-          </div>
-            <p>{location.text}</p>
+            <p key={index} className='pr-4 text-5xl'>{location.flag}</p>
+          </div >
+            <p key={index}>{location.text}</p>
 
           </div>
         ))}
