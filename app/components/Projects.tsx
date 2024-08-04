@@ -21,7 +21,16 @@ const Projects = () => {
         repo: "https://github.com/mollybrace/jenn-evolve",
         site: "https://jenn-evolve.vercel.app/",
         requirements: ["• A multipage website displaying two business areas", "• A review feature", "• A contact form", "• Links to socials", "•Aligns with the brand"]
-    }
+    },
+    {
+      title: "Flying Pig Lets",
+      tools: ["• Svelte ", "• Tailwind CSS", "• Javascript ", "• Hosted on Vercel "],
+      info: "A responsive landing page for a Air Bnb",
+      img: "/flyingpiglets.png",
+      repo: "www.flyingpiglets.co.uk",
+      site: "www.flyingpiglets.co.uk",
+      requirements: ["• A multipage website displaying two business areas", "• A review feature", "• A Google Maps component", "• Links to socials"]
+  }
 ];
 
   return (
