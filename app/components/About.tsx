@@ -7,10 +7,10 @@ const About = () => {
     {
       year: "2013", flag: "🇬🇷", text: "Living and working in Greece for six months."
     },
-    {year: "2017", flag: "🇩🇪", text: "Moving to Berlin when I was 21 to complete my undergraduate placement year",},
+    {year: "2017", flag: "🇩🇪", text: "Moving to Berlin when I was 21 to complete my undergraduate placement year.",},
     {year: "2018", flag: "🇦🇺", text: "Moving to Australia upon completion of my degree for a working holiday.",},
     {year: "2020", flag: "🇹🇭 ", text: "Living in Thailand for 3 years during Covid-19.",},
-    {year: "2022, 2023", flag: "🇪🇺", text: "Two summers living and work on superyachts in The Meditarranean",},
+    {year: "2022, 2023", flag: "🇪🇺", text: "Two summers living and work on superyachts in The Meditarranean.",},
     {year: "2024", flag: "🇮🇳", text: "Most recently I have spent 5 months living in India where I completed my yoga qualification and worked on development projects."}
 
   ]
@@ -29,10 +29,14 @@ const About = () => {
         {locations.map((location, index) => (
           <div key={index} className='flex flex-row align-middle'>
           <div className='flex flex-col w-[150px] text-center items-center rounded-xl justify-center basis-1 p-2'>
-            <p key={index} className='pr-4 text-5xl'>{location.flag}</p>
+            <p key={index} className='text-6xl p-2'>{location.flag}</p>
           </div >
-            <p key={index}>{location.text}</p>
+          <div className='absolute'></div>
+          <div className='border w-full rounded-lg p-2 flex items-center bg-gray-100 mt-2'>
 
+
+            <p key={index}>{location.text}</p>
+            </div>
           </div>
         ))}
        
@@ -46,8 +50,7 @@ const About = () => {
         <h2>Nutrition and Cooking</h2>
         <h2>Yoga and Mindfulness</h2>
         <h2>Health & Fitness</h2>
-        <h2>Reading & Audiobooks</h2>
-        <h2 className='pb-4'>Podcasts</h2>
+        <h2 className='pb-4'>Reading & Podcasts</h2>
         </div>
         </div>
         </div>

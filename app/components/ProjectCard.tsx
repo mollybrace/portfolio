@@ -55,10 +55,18 @@ const ProjectCard = ({ project }) => {
         </div>
         </div>  
         
-        <div id="back" className='absolute flip-card-back flex flex-col align-middle justify-center text-center'>
-          <p className='pt-4 text-2xl'>{project.info}</p>
+        <div id="back" className='absolute flip-card-back flex flex-col align-middle justify-around text-center'>
+          <p className='justify-start pt-4 text-2xl'>{project.info}</p>
           <ul>
-            <li className='m-4 px-4 text-gray-400 italic text-xl'>{project.tools}</li>
+            <p className='text-xl mt-4 font-bold'>Project Requirements</p>
+            {project.requirements.map((requirement, index) => (
+              <li key={index} className='block'>{requirement}</li>
+
+            ))}
+          </ul>
+          <ul>
+            <p className='text-gray-400 mt-4 px-4 text-xl font-bold'>Project Tools</p>
+            <li className=' text-gray-400 italic text-xl'>{project.tools}</li>
           </ul>
 
         </div>
