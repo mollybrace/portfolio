@@ -29,7 +29,7 @@ const Projects = () => {
       img: "/flyingpiglets.png",
       repo: "www.flyingpiglets.co.uk",
       site: "www.flyingpiglets.co.uk",
-      requirements: ["• A multipage website displaying two business areas", "• A review feature", "• A Google Maps component", "• Links to socials"]
+      requirements: ["• A review feature", "• A Google Maps component", "• Links to socials"]
   }
 ];
 
