@@ -1,7 +1,4 @@
 import React from 'react'
-import Timeline from './Timeline'
-import Overview from './Overview'
-import SmallNav from './SmallNav'
 import SmallTimeline from './SmallTimeline'
 
 const Experience = () => {
