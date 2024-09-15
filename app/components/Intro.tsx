@@ -1,10 +1,24 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Intro = () => {
   return (
-    <div className='flex justify-center'>
+<div className=''>
+  <div className='flex flex-col justify-center items-center lg:flex-row-reverse'>
+    <div className='lg:basis-1/3'>
+      <Image 
+        src="/mollybrace.jpeg" 
+        alt="molly"
+        width={250}
+        height={250}
+        className='rounded-full mb-4 lg:basis-1/3'/>
 
-    <div className='flex flex-col items-start text-gray-400 text-balance text-xl pb-6   w-5/6'>
+    </div>
+    <div>
+</div>
+
+     <div className='flex flex-col items-start text-gray-400 text-balance text-xl pb-6  w-5/6 lg:basis-2/3 lg:mx-12'>
+    
         <p className='py-2'>Hi, I'm Molly!</p>
         <p className='py-2'>A Freelance Web Developer, Yoga Instructor and English Teaacher.</p>
         <p className='py-2 w-full text-wrap'>
@@ -15,10 +29,11 @@ const Intro = () => {
         </p>
         <div className='flex justify-center text-center align-middle'>
 
-        <p className='py-4'>Scroll down to find out more...</p>
         </div>
 
     </div>
+    </div>
+   
     </div>
   )
 }

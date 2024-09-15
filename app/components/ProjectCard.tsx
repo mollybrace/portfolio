@@ -26,7 +26,7 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
-      <div className={`flip-card container bg-gray-300 shadow-lg rounded-xl w-2/4 p-4 m-6 h-[500px] lg:h-[750px] lg:w-[500px] cursor-pointer text-blue-950 hover:bg-blue-950 hover:text-gray-200 transition-colors ${flipped ? 'flipped' : ''}`} 
+      <div className={`flip-card container bg-gray-200 shadow-lg rounded-xl w-2/4 p-4 m-6 h-[500px] lg:h-[750px] lg:w-[500px] cursor-pointer text-blue-950 hover:bg-blue-950 hover:text-gray-200 transition-colors ${flipped ? 'flipped' : ''}`} 
       onClick={flipCard}
       >
         <div className="flip-card-inner">

@@ -22,17 +22,17 @@ const About = () => {
         <div className='flex justify-center'>
 
         <div className='w-4/5 flex justify-center items-center flex-col'>
-        <p className='pl-10 py-6 text-gray-400 text-5xl font-extrabold'>Travel</p>
+        <p className='pl-10 py-6 text-gray-400 text-5xl'>Travel</p>
         <div className='text-xl'>
           
         <p>I am travel obsessed having lived and worked all over the world, the most notable trips have been: </p>
         {locations.map((location, index) => (
-          <div key={index} className='flex flex-row align-middle'>
+          <div key={index} className='flex flex-row align-middle bg-gray-100 my-4 rounded-lg'>
           <div className='flex flex-col w-[150px] text-center items-center rounded-xl justify-center basis-1 p-2'>
-            <p key={index} className='text-6xl p-2'>{location.flag}</p>
+            <p key={index} className='text-6xl  p-2'>{location.flag}</p>
           </div >
           <div className='absolute'></div>
-          <div className='border w-full rounded-lg p-2 flex items-center bg-gray-100 mt-2'>
+          <div className='w-full rounded-lg p-2 flex items-center bg-gray-100 mt-2'>
 
 
             <p key={index}>{location.text}</p>
@@ -45,7 +45,7 @@ const About = () => {
         </div>
         <div className='flex justify-center'>
         <div className='rounded-xl p-4 mb-6 flex justify-center flex-col text-center'>
-        <p className='py-6 text-gray-400 text-5xl font-extrabold'>Hobbies</p>
+        <p className='py-6 text-gray-400 text-5xl'>Hobbies</p>
         <div className='text-lg'>
         <h2>Nutrition and Cooking</h2>
         <h2>Yoga and Mindfulness</h2>

@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import { TechSkills } from "./components/TechSkills";
 import About from "./components/About";
 import SmallTimeline from "./components/SmallTimeline";
+import Instagram from "./components/Instagram";
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <Experience />
       <About />
       <Contact />
+
 
 
     </div>
